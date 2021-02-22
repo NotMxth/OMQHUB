@@ -1,16 +1,3 @@
---[[ OMQHUB V0.2
-                                                                               
-   ::::::::       ::           ::      :::::     ::        ::    ::        ::    :::::::::     
- ::        ::     ::::       ::::    ::     ::   ::        ::    ::        ::    ::       ::
-::          ::    ::  ::    :: ::   ::       ::  ::        ::    ::        ::    ::       ::
-::          ::    ::   ::  ::  ::   ::       ::  ::        ::    ::        ::    ::       ::
-::          ::    ::     ::    ::   ::       ::  ::::::::::::    ::        ::    ::::::::::
-::          ::    ::           ::    :: ::   ::  ::        ::    ::        ::    ::       ::
- ::        ::     ::           ::     ::::::::   ::        ::     ::      ::     ::       ::
-   :::::::::      ::           ::   ::           ::        ::       ::::::       ::::::::::
-                                                                               
-
---]]
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local OMQHUBV02 = Instance.new("TextLabel")
@@ -68,11 +55,11 @@ ARSENALEHUB.TextColor3 = Color3.fromRGB(255, 0, 0)
 ARSENALEHUB.TextScaled = true
 ARSENALEHUB.TextSize = 18.000
 ARSENALEHUB.TextWrapped = true
-ARSENALEHUB.MouseButton1Down:connect(funtion()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
-	end)
+ARSENALEHUB.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+end)
 
-	COMINGSOON.Name = "COMING SOON"
+COMINGSOON.Name = "COMING SOON"
 COMINGSOON.Parent = Main
 COMINGSOON.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 COMINGSOON.Position = UDim2.new(0.66846168, 0, 0.170454532, 0)
@@ -212,6 +199,10 @@ XCLOSE.Font = Enum.Font.SourceSans
 XCLOSE.Text = "X"
 XCLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 XCLOSE.TextSize = 14.000
+XCLOSE.MouseButton1Down:connect(function()
+    Main.Visible = false
+    OPENMAIN.Visible = true
+end)
 
 KINGPIECE.Name = "KING PIECE"
 KINGPIECE.Parent = Main
@@ -226,7 +217,7 @@ KINGPIECE.TextScaled = true
 KINGPIECE.TextSize = 18.000
 KINGPIECE.TextWrapped = true
 KINGPIECE.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
 end)
 
 OPENMAIN.Name = "OPENMAIN"
@@ -249,3 +240,7 @@ SHOW.Text = "SHOW GUI"
 SHOW.TextColor3 = Color3.fromRGB(0, 0, 0)
 SHOW.TextSize = 24.000
 SHOW.TextWrapped = true
+SHOW.MouseButton1Down:connect(function()
+    OPENMAIN.Visible = false
+    Main.Visible = true
+end)
