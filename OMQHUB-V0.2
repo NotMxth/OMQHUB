@@ -1,4 +1,16 @@
--- Made by Felix
+--[[ OMQHUB V0.2
+                                                                               
+   ::::::::       ::           ::      :::::     ::        ::    ::        ::    :::::::::     
+ ::        ::     ::::       ::::    ::     ::   ::        ::    ::        ::    ::       ::
+::          ::    ::  ::    :: ::   ::       ::  ::        ::    ::        ::    ::       ::
+::          ::    ::   ::  ::  ::   ::       ::  ::        ::    ::        ::    ::       ::
+::          ::    ::     ::    ::   ::       ::  ::::::::::::    ::        ::    ::::::::::
+::          ::    ::           ::    :: ::   ::  ::        ::    ::        ::    ::       ::
+ ::        ::     ::           ::     ::::::::   ::        ::     ::      ::     ::       ::
+   :::::::::      ::           ::   ::           ::        ::       ::::::       ::::::::::
+                                                                               
+
+--]]
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local OMQHUBV02 = Instance.new("TextLabel")
@@ -13,8 +25,8 @@ local COMINGSOON_7 = Instance.new("TextButton")
 local COMINGSOON_8 = Instance.new("TextButton")
 local COMINGSOON_9 = Instance.new("TextButton")
 local COMINGSOON_10 = Instance.new("TextButton")
-local COMINGSOON_11 = Instance.new("TextButton")
 local XCLOSE = Instance.new("TextButton")
+local KINGPIECE = Instance.new("TextButton")
 local OPENMAIN = Instance.new("Frame")
 local SHOW = Instance.new("TextButton")
 
@@ -56,30 +68,27 @@ ARSENALEHUB.TextColor3 = Color3.fromRGB(255, 0, 0)
 ARSENALEHUB.TextScaled = true
 ARSENALEHUB.TextSize = 18.000
 ARSENALEHUB.TextWrapped = true
-ARSENALEHUB.MouseButton1Down:connect(function()
+ARSENALEHUB.MouseButton1Down:connect(funtion()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
-end)
+	end)
 
-KINGPIECE.Name = "KINGPIECE"
-KINGPIECE.Parent = Main
-KINGPIECE.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-KINGPIECE.Position = UDim2.new(0.354969591, 0, 0.170454532, 0)
-KINGPIECE.Size = UDim2.new(0, 149, 0, 41)
-KINGPIECE.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-KINGPIECE.Font = Enum.Font.Fantasy
-KINGPIECE.Text = "KING PIECE"
-KINGPIECE.TextColor3 = Color3.fromRGB(255, 0, 0)
-KINGPIECE.TextScaled = true
-KINGPIECE.TextSize = 18.000
-KINGPIECE.TextWrapped = true
-KINGPIECE.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
-end)
+	COMINGSOON.Name = "COMING SOON"
+COMINGSOON.Parent = Main
+COMINGSOON.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+COMINGSOON.Position = UDim2.new(0.66846168, 0, 0.170454532, 0)
+COMINGSOON.Size = UDim2.new(0, 149, 0, 41)
+COMINGSOON.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+COMINGSOON.Font = Enum.Font.Fantasy
+COMINGSOON.Text = "COMING SOON"
+COMINGSOON.TextColor3 = Color3.fromRGB(255, 0, 0)
+COMINGSOON.TextScaled = true
+COMINGSOON.TextSize = 18.000
+COMINGSOON.TextWrapped = true
 
 COMINGSOON_2.Name = "COMING SOON"
 COMINGSOON_2.Parent = Main
 COMINGSOON_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_2.Position = UDim2.new(0.66846168, 0, 0.170454532, 0)
+COMINGSOON_2.Position = UDim2.new(0.354969591, 0, 0.325757563, 0)
 COMINGSOON_2.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_2.Font = Enum.Font.Fantasy
@@ -92,7 +101,7 @@ COMINGSOON_2.TextWrapped = true
 COMINGSOON_3.Name = "COMING SOON"
 COMINGSOON_3.Parent = Main
 COMINGSOON_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_3.Position = UDim2.new(0.354969591, 0, 0.325757563, 0)
+COMINGSOON_3.Position = UDim2.new(0.354969591, 0, 0.481060594, 0)
 COMINGSOON_3.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_3.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_3.Font = Enum.Font.Fantasy
@@ -105,7 +114,7 @@ COMINGSOON_3.TextWrapped = true
 COMINGSOON_4.Name = "COMING SOON"
 COMINGSOON_4.Parent = Main
 COMINGSOON_4.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_4.Position = UDim2.new(0.354969591, 0, 0.481060594, 0)
+COMINGSOON_4.Position = UDim2.new(0.354969591, 0, 0.636363626, 0)
 COMINGSOON_4.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_4.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_4.Font = Enum.Font.Fantasy
@@ -118,7 +127,7 @@ COMINGSOON_4.TextWrapped = true
 COMINGSOON_5.Name = "COMING SOON"
 COMINGSOON_5.Parent = Main
 COMINGSOON_5.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_5.Position = UDim2.new(0.354969591, 0, 0.636363626, 0)
+COMINGSOON_5.Position = UDim2.new(0.66846168, 0, 0.325757563, 0)
 COMINGSOON_5.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_5.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_5.Font = Enum.Font.Fantasy
@@ -131,7 +140,7 @@ COMINGSOON_5.TextWrapped = true
 COMINGSOON_6.Name = "COMING SOON"
 COMINGSOON_6.Parent = Main
 COMINGSOON_6.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_6.Position = UDim2.new(0.66846168, 0, 0.325757563, 0)
+COMINGSOON_6.Position = UDim2.new(0.66846168, 0, 0.481060594, 0)
 COMINGSOON_6.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_6.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_6.Font = Enum.Font.Fantasy
@@ -144,7 +153,7 @@ COMINGSOON_6.TextWrapped = true
 COMINGSOON_7.Name = "COMING SOON"
 COMINGSOON_7.Parent = Main
 COMINGSOON_7.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_7.Position = UDim2.new(0.66846168, 0, 0.481060594, 0)
+COMINGSOON_7.Position = UDim2.new(0.66846168, 0, 0.636363626, 0)
 COMINGSOON_7.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_7.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_7.Font = Enum.Font.Fantasy
@@ -157,7 +166,7 @@ COMINGSOON_7.TextWrapped = true
 COMINGSOON_8.Name = "COMING SOON"
 COMINGSOON_8.Parent = Main
 COMINGSOON_8.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_8.Position = UDim2.new(0.66846168, 0, 0.636363626, 0)
+COMINGSOON_8.Position = UDim2.new(0.0375092998, 0, 0.325757563, 0)
 COMINGSOON_8.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_8.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_8.Font = Enum.Font.Fantasy
@@ -170,7 +179,7 @@ COMINGSOON_8.TextWrapped = true
 COMINGSOON_9.Name = "COMING SOON"
 COMINGSOON_9.Parent = Main
 COMINGSOON_9.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_9.Position = UDim2.new(0.0375092998, 0, 0.325757563, 0)
+COMINGSOON_9.Position = UDim2.new(0.0375092998, 0, 0.481060594, 0)
 COMINGSOON_9.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_9.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_9.Font = Enum.Font.Fantasy
@@ -183,7 +192,7 @@ COMINGSOON_9.TextWrapped = true
 COMINGSOON_10.Name = "COMING SOON"
 COMINGSOON_10.Parent = Main
 COMINGSOON_10.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_10.Position = UDim2.new(0.0375092998, 0, 0.481060594, 0)
+COMINGSOON_10.Position = UDim2.new(0.0375092998, 0, 0.636363626, 0)
 COMINGSOON_10.Size = UDim2.new(0, 149, 0, 41)
 COMINGSOON_10.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 COMINGSOON_10.Font = Enum.Font.Fantasy
@@ -192,19 +201,6 @@ COMINGSOON_10.TextColor3 = Color3.fromRGB(255, 0, 0)
 COMINGSOON_10.TextScaled = true
 COMINGSOON_10.TextSize = 18.000
 COMINGSOON_10.TextWrapped = true
-
-COMINGSOON_11.Name = "COMING SOON"
-COMINGSOON_11.Parent = Main
-COMINGSOON_11.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON_11.Position = UDim2.new(0.0375092998, 0, 0.636363626, 0)
-COMINGSOON_11.Size = UDim2.new(0, 149, 0, 41)
-COMINGSOON_11.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-COMINGSOON_11.Font = Enum.Font.Fantasy
-COMINGSOON_11.Text = "COMING SOON"
-COMINGSOON_11.TextColor3 = Color3.fromRGB(255, 0, 0)
-COMINGSOON_11.TextScaled = true
-COMINGSOON_11.TextSize = 18.000
-COMINGSOON_11.TextWrapped = true
 
 XCLOSE.Name = "X-CLOSE"
 XCLOSE.Parent = Main
@@ -216,9 +212,21 @@ XCLOSE.Font = Enum.Font.SourceSans
 XCLOSE.Text = "X"
 XCLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 XCLOSE.TextSize = 14.000
-XCLOSE.MouseButton1Down:connect(function()
-	Main.Visible = false
-	OPENMAIN.Visible = true
+
+KINGPIECE.Name = "KING PIECE"
+KINGPIECE.Parent = Main
+KINGPIECE.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+KINGPIECE.Position = UDim2.new(0.354969561, 0, 0.170454547, 0)
+KINGPIECE.Size = UDim2.new(0, 148, 0, 41)
+KINGPIECE.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+KINGPIECE.Font = Enum.Font.Fantasy
+KINGPIECE.Text = "KING PIECE"
+KINGPIECE.TextColor3 = Color3.fromRGB(255, 0, 0)
+KINGPIECE.TextScaled = true
+KINGPIECE.TextSize = 18.000
+KINGPIECE.TextWrapped = true
+KINGPIECE.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
 end)
 
 OPENMAIN.Name = "OPENMAIN"
@@ -241,7 +249,3 @@ SHOW.Text = "SHOW GUI"
 SHOW.TextColor3 = Color3.fromRGB(0, 0, 0)
 SHOW.TextSize = 24.000
 SHOW.TextWrapped = true
-SHOW.MouseButton1Down:connect(function()
-	OPENMAIN.Visible = false
-	Main.Visible = true
-end)
