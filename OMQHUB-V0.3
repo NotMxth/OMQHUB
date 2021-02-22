@@ -1,8 +1,8 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
-local OMQHUBV02 = Instance.new("TextLabel")
+local OMQHUBV03 = Instance.new("TextLabel")
 local ARSENALEHUB = Instance.new("TextButton")
-local COMINGSOON = Instance.new("TextButton")
+local JAILBREAK = Instance.new("TextButton")
 local COMINGSOON_2 = Instance.new("TextButton")
 local COMINGSOON_3 = Instance.new("TextButton")
 local COMINGSOON_4 = Instance.new("TextButton")
@@ -30,18 +30,18 @@ Main.Size = UDim2.new(0, 504, 0, 264)
 Main.Active = true
 Main.Draggable = true
 
-OMQHUBV02.Name = "OMQ-HUB V0.2"
-OMQHUBV02.Parent = Main
-OMQHUBV02.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-OMQHUBV02.BackgroundTransparency = 1.000
-OMQHUBV02.Position = UDim2.new(0.354659677, 0, 0, 0)
-OMQHUBV02.Size = UDim2.new(0, 156, 0, 28)
-OMQHUBV02.Font = Enum.Font.Ubuntu
-OMQHUBV02.Text = "OMQ-HUB V0.2"
-OMQHUBV02.TextColor3 = Color3.fromRGB(0, 0, 0)
-OMQHUBV02.TextScaled = true
-OMQHUBV02.TextSize = 14.000
-OMQHUBV02.TextWrapped = true
+OMQHUBV03.Name = "OMQ-HUB V0.3"
+OMQHUBV03.Parent = Main
+OMQHUBV03.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+OMQHUBV03.BackgroundTransparency = 1.000
+OMQHUBV03.Position = UDim2.new(0.354659677, 0, 0, 0)
+OMQHUBV03.Size = UDim2.new(0, 156, 0, 28)
+OMQHUBV03.Font = Enum.Font.Ubuntu
+OMQHUBV03.Text = "OMQ-HUB V0.3"
+OMQHUBV03.TextColor3 = Color3.fromRGB(0, 0, 0)
+OMQHUBV03.TextScaled = true
+OMQHUBV03.TextSize = 14.000
+OMQHUBV03.TextWrapped = true
 
 ARSENALEHUB.Name = "ARSENAL EHUB"
 ARSENALEHUB.Parent = Main
@@ -56,21 +56,24 @@ ARSENALEHUB.TextScaled = true
 ARSENALEHUB.TextSize = 18.000
 ARSENALEHUB.TextWrapped = true
 ARSENALEHUB.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
 end)
 
-COMINGSOON.Name = "COMING SOON"
-COMINGSOON.Parent = Main
-COMINGSOON.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-COMINGSOON.Position = UDim2.new(0.66846168, 0, 0.170454532, 0)
-COMINGSOON.Size = UDim2.new(0, 149, 0, 41)
-COMINGSOON.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-COMINGSOON.Font = Enum.Font.Fantasy
-COMINGSOON.Text = "COMING SOON"
-COMINGSOON.TextColor3 = Color3.fromRGB(255, 0, 0)
-COMINGSOON.TextScaled = true
-COMINGSOON.TextSize = 18.000
-COMINGSOON.TextWrapped = true
+JAILBREAK.Name = "JAILBREAK"
+JAILBREAK.Parent = Main
+JAILBREAK.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+JAILBREAK.Position = UDim2.new(0.66846168, 0, 0.170454532, 0)
+JAILBREAK.Size = UDim2.new(0, 149, 0, 41)
+JAILBREAK.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+JAILBREAK.Font = Enum.Font.Fantasy
+JAILBREAK.Text = "JAILBREAK"
+JAILBREAK.TextColor3 = Color3.fromRGB(255, 0, 0)
+JAILBREAK.TextScaled = true
+JAILBREAK.TextSize = 18.000
+JAILBREAK.TextWrapped = true
+JAILBREAK.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak",true))()
+end)
 
 COMINGSOON_2.Name = "COMING SOON"
 COMINGSOON_2.Parent = Main
@@ -200,8 +203,8 @@ XCLOSE.Text = "X"
 XCLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 XCLOSE.TextSize = 14.000
 XCLOSE.MouseButton1Down:connect(function()
-    Main.Visible = false
-    OPENMAIN.Visible = true
+	Main.Visible = false
+	OPENMAIN.Visible = true
 end)
 
 KINGPIECE.Name = "KING PIECE"
@@ -217,7 +220,7 @@ KINGPIECE.TextScaled = true
 KINGPIECE.TextSize = 18.000
 KINGPIECE.TextWrapped = true
 KINGPIECE.MouseButton1Down:connect(function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
 end)
 
 OPENMAIN.Name = "OPENMAIN"
@@ -241,6 +244,6 @@ SHOW.TextColor3 = Color3.fromRGB(0, 0, 0)
 SHOW.TextSize = 24.000
 SHOW.TextWrapped = true
 SHOW.MouseButton1Down:connect(function()
-    OPENMAIN.Visible = false
-    Main.Visible = true
+	OPENMAIN.Visible = false
+	Main.Visible = true
 end)
