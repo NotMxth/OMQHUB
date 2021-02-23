@@ -1,4 +1,4 @@
--- OMQHUB (REVAMPED) Made by FELIX
+-- OMQHUB Made by FELIX
 local ScreenGui = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
 local ARSENALEHUB = Instance.new("TextButton")
@@ -11,8 +11,8 @@ local BUTTON14 = Instance.new("TextButton")
 local BUTTON11 = Instance.new("TextButton")
 local BUTTON8 = Instance.new("TextButton")
 local BUTTON5 = Instance.new("TextButton")
-local BUTTON3 = Instance.new("TextButton")
-local BUTTON2 = Instance.new("TextButton")
+local KINGPIECE = Instance.new("TextButton")
+local JAILBREAK = Instance.new("TextButton")
 local BUTTON6 = Instance.new("TextButton")
 local BUTTON9 = Instance.new("TextButton")
 local BUTTON12 = Instance.new("TextButton")
@@ -34,7 +34,6 @@ MAIN.Parent = ScreenGui
 MAIN.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 MAIN.Position = UDim2.new(0.34194833, 0, 0.333626896, 0)
 MAIN.Size = UDim2.new(0, 504, 0, 264)
-MAIN.Visible = false
 MAIN.Active = true
 MAIN.Draggable = true
 
@@ -164,7 +163,7 @@ BUTTON5.TextColor3 = Color3.fromRGB(0, 0, 0)
 BUTTON5.TextSize = 19.000
 BUTTON5.TextWrapped = true
 
-KINGPIECE.Name = "BUTTON3"
+KINGPIECE.Name = "KING PIECE"
 KINGPIECE.Parent = MAIN
 KINGPIECE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 KINGPIECE.Position = UDim2.new(0, 329, 0, 34)
@@ -191,7 +190,7 @@ JAILBREAK.TextColor3 = Color3.fromRGB(0, 0, 0)
 JAILBREAK.TextSize = 19.000
 JAILBREAK.TextWrapped = true
 JAILBREAK.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak",true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak')))()
 end)
 
 BUTTON6.Name = "BUTTON6"
@@ -252,6 +251,10 @@ CLOSE.Font = Enum.Font.Code
 CLOSE.Text = "X"
 CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 CLOSE.TextSize = 18.000
+CLOSE.MouseButton1Down:connect(function()
+MAIN.Visible = false
+OPENMAIN.Visible = true
+end)
 
 INLINEUP.Name = "INLINE UP"
 INLINEUP.Parent = MAIN
@@ -302,6 +305,8 @@ OPENMAIN.Parent = ScreenGui
 OPENMAIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OPENMAIN.BackgroundTransparency = 1.000
 OPENMAIN.Size = UDim2.new(0, 100, 0, 35)
+OPENMAIN.Active = true
+OPENMAIN.Draggable = true
 
 SHOW.Name = "SHOW"
 SHOW.Parent = OPENMAIN
@@ -312,3 +317,7 @@ SHOW.Font = Enum.Font.SourceSans
 SHOW.Text = "SHOW"
 SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
 SHOW.TextSize = 19.000
+SHOW.MouseButton1Down:connect(function()
+OPENMAIN.Visible = false
+MAIN.Visible = true
+end)
