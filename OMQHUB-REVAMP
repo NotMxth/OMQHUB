@@ -1,0 +1,314 @@
+-- OMQHUB (REVAMPED) Made by FELIX
+local ScreenGui = Instance.new("ScreenGui")
+local MAIN = Instance.new("Frame")
+local ARSENALEHUB = Instance.new("TextButton")
+local TITLE = Instance.new("TextLabel")
+local BUTTON4 = Instance.new("TextButton")
+local BUTTON7 = Instance.new("TextButton")
+local BUTTON10 = Instance.new("TextButton")
+local BUTTON13 = Instance.new("TextButton")
+local BUTTON14 = Instance.new("TextButton")
+local BUTTON11 = Instance.new("TextButton")
+local BUTTON8 = Instance.new("TextButton")
+local BUTTON5 = Instance.new("TextButton")
+local BUTTON3 = Instance.new("TextButton")
+local BUTTON2 = Instance.new("TextButton")
+local BUTTON6 = Instance.new("TextButton")
+local BUTTON9 = Instance.new("TextButton")
+local BUTTON12 = Instance.new("TextButton")
+local BUTTON15 = Instance.new("TextButton")
+local CLOSE = Instance.new("TextButton")
+local INLINEUP = Instance.new("Frame")
+local INLINEDOWN = Instance.new("Frame")
+local VERSIONTITLE = Instance.new("TextLabel")
+local BY = Instance.new("TextLabel")
+local OPENMAIN = Instance.new("Frame")
+local SHOW = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+MAIN.Name = "MAIN"
+MAIN.Parent = ScreenGui
+MAIN.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+MAIN.Position = UDim2.new(0.34194833, 0, 0.333626896, 0)
+MAIN.Size = UDim2.new(0, 504, 0, 264)
+MAIN.Visible = false
+MAIN.Active = true
+MAIN.Draggable = true
+
+ARSENALEHUB.Name = "ARSENAL EHUB"
+ARSENALEHUB.Parent = MAIN
+ARSENALEHUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARSENALEHUB.Position = UDim2.new(0, 21, 0, 34)
+ARSENALEHUB.Size = UDim2.new(0, 154, 0, 39)
+ARSENALEHUB.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+ARSENALEHUB.Font = Enum.Font.Fantasy
+ARSENALEHUB.Text = "ARSENAL EHUB"
+ARSENALEHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
+ARSENALEHUB.TextSize = 19.000
+ARSENALEHUB.TextWrapped = true
+ARSENALEHUB.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+end)
+
+TITLE.Name = "TITLE"
+TITLE.Parent = MAIN
+TITLE.Active = true
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(0, 162, 0, 4)
+TITLE.Selectable = true
+TITLE.Size = UDim2.new(0, 180, 0, 30)
+TITLE.Font = Enum.Font.Cartoon
+TITLE.Text = "OMQHUB"
+TITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLE.TextScaled = true
+TITLE.TextSize = 14.000
+TITLE.TextWrapped = true
+
+BUTTON4.Name = "BUTTON4"
+BUTTON4.Parent = MAIN
+BUTTON4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON4.Position = UDim2.new(0, 21, 0, 73)
+BUTTON4.Size = UDim2.new(0, 154, 0, 39)
+BUTTON4.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON4.Font = Enum.Font.Fantasy
+BUTTON4.Text = "SOON!"
+BUTTON4.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON4.TextSize = 19.000
+BUTTON4.TextWrapped = true
+
+BUTTON7.Name = "BUTTON7"
+BUTTON7.Parent = MAIN
+BUTTON7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON7.Position = UDim2.new(0, 21, 0, 112)
+BUTTON7.Size = UDim2.new(0, 154, 0, 39)
+BUTTON7.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON7.Font = Enum.Font.Fantasy
+BUTTON7.Text = "SOON!"
+BUTTON7.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON7.TextSize = 19.000
+BUTTON7.TextWrapped = true
+
+BUTTON10.Name = "BUTTON10"
+BUTTON10.Parent = MAIN
+BUTTON10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON10.Position = UDim2.new(0, 21, 0, 151)
+BUTTON10.Size = UDim2.new(0, 154, 0, 39)
+BUTTON10.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON10.Font = Enum.Font.Fantasy
+BUTTON10.Text = "SOON!"
+BUTTON10.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON10.TextSize = 19.000
+BUTTON10.TextWrapped = true
+
+BUTTON13.Name = "BUTTON13"
+BUTTON13.Parent = MAIN
+BUTTON13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON13.Position = UDim2.new(0, 21, 0, 190)
+BUTTON13.Size = UDim2.new(0, 154, 0, 39)
+BUTTON13.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON13.Font = Enum.Font.Fantasy
+BUTTON13.Text = "SOON!"
+BUTTON13.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON13.TextSize = 19.000
+BUTTON13.TextWrapped = true
+
+BUTTON14.Name = "BUTTON14"
+BUTTON14.Parent = MAIN
+BUTTON14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON14.Position = UDim2.new(0, 175, 0, 190)
+BUTTON14.Size = UDim2.new(0, 154, 0, 39)
+BUTTON14.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON14.Font = Enum.Font.Fantasy
+BUTTON14.Text = "SOON!"
+BUTTON14.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON14.TextSize = 19.000
+BUTTON14.TextWrapped = true
+
+BUTTON11.Name = "BUTTON11"
+BUTTON11.Parent = MAIN
+BUTTON11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON11.Position = UDim2.new(0, 175, 0, 151)
+BUTTON11.Size = UDim2.new(0, 154, 0, 39)
+BUTTON11.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON11.Font = Enum.Font.Fantasy
+BUTTON11.Text = "SOON!"
+BUTTON11.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON11.TextSize = 19.000
+BUTTON11.TextWrapped = true
+
+BUTTON8.Name = "BUTTON8"
+BUTTON8.Parent = MAIN
+BUTTON8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON8.Position = UDim2.new(0, 175, 0, 112)
+BUTTON8.Size = UDim2.new(0, 154, 0, 39)
+BUTTON8.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON8.Font = Enum.Font.Fantasy
+BUTTON8.Text = "SOON!"
+BUTTON8.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON8.TextSize = 19.000
+BUTTON8.TextWrapped = true
+
+BUTTON5.Name = "BUTTON5"
+BUTTON5.Parent = MAIN
+BUTTON5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON5.Position = UDim2.new(0, 175, 0, 73)
+BUTTON5.Size = UDim2.new(0, 154, 0, 39)
+BUTTON5.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON5.Font = Enum.Font.Fantasy
+BUTTON5.Text = "SOON!"
+BUTTON5.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON5.TextSize = 19.000
+BUTTON5.TextWrapped = true
+
+KINGPIECE.Name = "BUTTON3"
+KINGPIECE.Parent = MAIN
+KINGPIECE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KINGPIECE.Position = UDim2.new(0, 329, 0, 34)
+KINGPIECE.Size = UDim2.new(0, 154, 0, 39)
+KINGPIECE.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+KINGPIECE.Font = Enum.Font.Fantasy
+KINGPIECE.Text = "KING PIECE"
+KINGPIECE.TextColor3 = Color3.fromRGB(0, 0, 0)
+KINGPIECE.TextSize = 19.000
+KINGPIECE.TextWrapped = true
+KINGPIECE.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+end)
+
+JAILBREAK.Name = "JAILBREAK"
+JAILBREAK.Parent = MAIN
+JAILBREAK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JAILBREAK.Position = UDim2.new(0, 175, 0, 34)
+JAILBREAK.Size = UDim2.new(0, 154, 0, 39)
+JAILBREAK.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+JAILBREAK.Font = Enum.Font.Fantasy
+JAILBREAK.Text = "JAILBREAK"
+JAILBREAK.TextColor3 = Color3.fromRGB(0, 0, 0)
+JAILBREAK.TextSize = 19.000
+JAILBREAK.TextWrapped = true
+JAILBREAK.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak",true))()
+end)
+
+BUTTON6.Name = "BUTTON6"
+BUTTON6.Parent = MAIN
+BUTTON6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON6.Position = UDim2.new(0, 329, 0, 73)
+BUTTON6.Size = UDim2.new(0, 154, 0, 39)
+BUTTON6.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON6.Font = Enum.Font.Fantasy
+BUTTON6.Text = "SOON!"
+BUTTON6.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON6.TextSize = 19.000
+BUTTON6.TextWrapped = true
+
+BUTTON9.Name = "BUTTON9"
+BUTTON9.Parent = MAIN
+BUTTON9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON9.Position = UDim2.new(0, 329, 0, 112)
+BUTTON9.Size = UDim2.new(0, 154, 0, 39)
+BUTTON9.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON9.Font = Enum.Font.Fantasy
+BUTTON9.Text = "SOON!"
+BUTTON9.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON9.TextSize = 19.000
+BUTTON9.TextWrapped = true
+
+BUTTON12.Name = "BUTTON12"
+BUTTON12.Parent = MAIN
+BUTTON12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON12.Position = UDim2.new(0, 329, 0, 151)
+BUTTON12.Size = UDim2.new(0, 154, 0, 39)
+BUTTON12.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON12.Font = Enum.Font.Fantasy
+BUTTON12.Text = "SOON!"
+BUTTON12.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON12.TextSize = 19.000
+BUTTON12.TextWrapped = true
+
+BUTTON15.Name = "BUTTON15"
+BUTTON15.Parent = MAIN
+BUTTON15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON15.Position = UDim2.new(0, 329, 0, 190)
+BUTTON15.Size = UDim2.new(0, 154, 0, 39)
+BUTTON15.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+BUTTON15.Font = Enum.Font.Fantasy
+BUTTON15.Text = "SOON!"
+BUTTON15.TextColor3 = Color3.fromRGB(0, 0, 0)
+BUTTON15.TextSize = 19.000
+BUTTON15.TextWrapped = true
+
+CLOSE.Name = "CLOSE"
+CLOSE.Parent = MAIN
+CLOSE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CLOSE.BackgroundTransparency = 1.000
+CLOSE.Position = UDim2.new(0, 477, 0, 0)
+CLOSE.Size = UDim2.new(0, 27, 0, 23)
+CLOSE.Font = Enum.Font.Code
+CLOSE.Text = "X"
+CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLOSE.TextSize = 18.000
+
+INLINEUP.Name = "INLINE UP"
+INLINEUP.Parent = MAIN
+INLINEUP.Active = true
+INLINEUP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+INLINEUP.Position = UDim2.new(-0.000816103013, 0, -8.12646103e-05, 0)
+INLINEUP.Selectable = true
+INLINEUP.Size = UDim2.new(0, 504, 0, 4)
+
+INLINEDOWN.Name = "INLINE DOWN"
+INLINEDOWN.Parent = MAIN
+INLINEDOWN.Active = true
+INLINEDOWN.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+INLINEDOWN.Position = UDim2.new(-0.000816103013, 0, 0.975078106, 0)
+INLINEDOWN.Selectable = true
+INLINEDOWN.Size = UDim2.new(0, 504, 0, 6)
+
+VERSIONTITLE.Name = "VERSIONTITLE"
+VERSIONTITLE.Parent = MAIN
+VERSIONTITLE.Active = true
+VERSIONTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VERSIONTITLE.BackgroundTransparency = 1.000
+VERSIONTITLE.Position = UDim2.new(0, 374, 0, 239)
+VERSIONTITLE.Selectable = true
+VERSIONTITLE.Size = UDim2.new(0, 129, 0, 18)
+VERSIONTITLE.Font = Enum.Font.Cartoon
+VERSIONTITLE.Text = "VERSION: 0.4 (REVAMP)"
+VERSIONTITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
+VERSIONTITLE.TextScaled = true
+VERSIONTITLE.TextSize = 14.000
+VERSIONTITLE.TextWrapped = true
+
+BY.Name = "BY"
+BY.Parent = MAIN
+BY.Active = true
+BY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BY.BackgroundTransparency = 1.000
+BY.Position = UDim2.new(0.577381015, 0, -1.11758709e-08, 0)
+BY.Selectable = true
+BY.Size = UDim2.new(0, 96, 0, 24)
+BY.Font = Enum.Font.Cartoon
+BY.Text = "By FELIX"
+BY.TextColor3 = Color3.fromRGB(0, 0, 0)
+BY.TextSize = 14.000
+
+OPENMAIN.Name = "OPENMAIN"
+OPENMAIN.Parent = ScreenGui
+OPENMAIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OPENMAIN.BackgroundTransparency = 1.000
+OPENMAIN.Size = UDim2.new(0, 100, 0, 35)
+
+SHOW.Name = "SHOW"
+SHOW.Parent = OPENMAIN
+SHOW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SHOW.Size = UDim2.new(0, 103, 0, 38)
+SHOW.Style = Enum.ButtonStyle.RobloxButtonDefault
+SHOW.Font = Enum.Font.SourceSans
+SHOW.Text = "SHOW"
+SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
+SHOW.TextSize = 19.000
