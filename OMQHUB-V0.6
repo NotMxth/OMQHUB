@@ -1,7 +1,7 @@
--- OMQHUB Made by FELIX
+-- OMQHUB - Made by FELIX
 local ScreenGui = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
-local ARSENALEHUB = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
 local TITLE = Instance.new("TextLabel")
 local Paranormica = Instance.new("TextButton")
 local BUTTON7 = Instance.new("TextButton")
@@ -11,8 +11,8 @@ local BUTTON14 = Instance.new("TextButton")
 local BUTTON11 = Instance.new("TextButton")
 local BUTTON8 = Instance.new("TextButton")
 local FleetheFacility = Instance.new("TextButton")
-local KINGPIECE = Instance.new("TextButton")
-local JAILBREAK = Instance.new("TextButton")
+local KingPiece = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
 local BUTTON6 = Instance.new("TextButton")
 local BUTTON9 = Instance.new("TextButton")
 local BUTTON12 = Instance.new("TextButton")
@@ -34,23 +34,23 @@ MAIN.Parent = ScreenGui
 MAIN.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 MAIN.Position = UDim2.new(0.34194833, 0, 0.333626896, 0)
 MAIN.Size = UDim2.new(0, 504, 0, 264)
+MAIN.Visible = false
 MAIN.Active = true
 MAIN.Draggable = true
-MAIN.Visible = false
 
-ARSENALEHUB.Name = "ARSENAL EHUB"
-ARSENALEHUB.Parent = MAIN
-ARSENALEHUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ARSENALEHUB.Position = UDim2.new(0, 21, 0, 34)
-ARSENALEHUB.Size = UDim2.new(0, 154, 0, 39)
-ARSENALEHUB.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-ARSENALEHUB.Font = Enum.Font.Fantasy
-ARSENALEHUB.Text = "ARSENAL EHUB"
-ARSENALEHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
-ARSENALEHUB.TextSize = 19.000
-ARSENALEHUB.TextWrapped = true
-ARSENALEHUB.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = MAIN
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.Position = UDim2.new(0, 21, 0, 34)
+Arsenal.Size = UDim2.new(0, 154, 0, 39)
+Arsenal.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Arsenal.Font = Enum.Font.Fantasy
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.TextSize = 19.000
+Arsenal.TextWrapped = true
+Arsenal.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
 end)
 
 TITLE.Name = "TITLE"
@@ -80,7 +80,7 @@ Paranormica.TextColor3 = Color3.fromRGB(0, 0, 0)
 Paranormica.TextSize = 19.000
 Paranormica.TextWrapped = true
 Paranormica.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(("http://squaresquad-teams.xyz/Release/Free.txt"), true))()
+    loadstring(game:HttpGet(("http://squaresquad-teams.xyz/Release/Free.txt"), true))()
 end)
 
 BUTTON7.Name = "BUTTON7"
@@ -167,37 +167,37 @@ FleetheFacility.TextColor3 = Color3.fromRGB(0, 0, 0)
 FleetheFacility.TextSize = 19.000
 FleetheFacility.TextWrapped = true
 FleetheFacility.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/Flee%20the%20Facility%20-%20GUI"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/Flee%20the%20Facility%20-%20GUI"))()
 end)
 
-KINGPIECE.Name = "KING PIECE"
-KINGPIECE.Parent = MAIN
-KINGPIECE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KINGPIECE.Position = UDim2.new(0, 329, 0, 34)
-KINGPIECE.Size = UDim2.new(0, 154, 0, 39)
-KINGPIECE.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-KINGPIECE.Font = Enum.Font.Fantasy
-KINGPIECE.Text = "KING PIECE"
-KINGPIECE.TextColor3 = Color3.fromRGB(0, 0, 0)
-KINGPIECE.TextSize = 19.000
-KINGPIECE.TextWrapped = true
-KINGPIECE.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+KingPiece.Name = "King Piece"
+KingPiece.Parent = MAIN
+KingPiece.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KingPiece.Position = UDim2.new(0, 329, 0, 34)
+KingPiece.Size = UDim2.new(0, 154, 0, 39)
+KingPiece.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+KingPiece.Font = Enum.Font.Fantasy
+KingPiece.Text = "King Piece"
+KingPiece.TextColor3 = Color3.fromRGB(0, 0, 0)
+KingPiece.TextSize = 19.000
+KingPiece.TextWrapped = true
+KingPiece.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
 end)
 
-JAILBREAK.Name = "JAILBREAK"
-JAILBREAK.Parent = MAIN
-JAILBREAK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JAILBREAK.Position = UDim2.new(0, 175, 0, 34)
-JAILBREAK.Size = UDim2.new(0, 154, 0, 39)
-JAILBREAK.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-JAILBREAK.Font = Enum.Font.Fantasy
-JAILBREAK.Text = "JAILBREAK"
-JAILBREAK.TextColor3 = Color3.fromRGB(0, 0, 0)
-JAILBREAK.TextSize = 19.000
-JAILBREAK.TextWrapped = true
-JAILBREAK.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak')))()
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = MAIN
+Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.Position = UDim2.new(0, 175, 0, 34)
+Jailbreak.Size = UDim2.new(0, 154, 0, 39)
+Jailbreak.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Jailbreak.Font = Enum.Font.Fantasy
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jailbreak.TextSize = 19.000
+Jailbreak.TextWrapped = true
+Jailbreak.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak')))()
 end)
 
 BUTTON6.Name = "BUTTON6"
@@ -259,25 +259,25 @@ CLOSE.Text = "X"
 CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 CLOSE.TextSize = 18.000
 CLOSE.MouseButton1Down:connect(function()
-	MAIN.Visible = false
-	OPENMAIN.Visible = true
+    MAIN.Visible = false
+    OPENMAIN.Visible = true
 end)
 
-INLINEUP.Name = "INLINE UP"
-INLINEUP.Parent = MAIN
-INLINEUP.Active = true
+INLINEUP.Name             = "INLINE UP"
+INLINEUP.Parent           = MAIN
+INLINEUP.Active           = true
 INLINEUP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-INLINEUP.Position = UDim2.new(-0.000816103013, 0, -8.12646103e-05, 0)
-INLINEUP.Selectable = true
-INLINEUP.Size = UDim2.new(0, 506, 0, 0)
+INLINEUP.Position         = UDim2.new(-0.000816103013, 0, -8.12646103e-05, 0)
+INLINEUP.Selectable       = true
+INLINEUP.Size             = UDim2.new(0, 506, 0, 2)
 
-INLINEDOWN.Name = "INLINE DOWN"
-INLINEDOWN.Parent = MAIN
-INLINEDOWN.Active = true
+INLINEDOWN.Name             = "INLINE DOWN"
+INLINEDOWN.Parent           = MAIN
+INLINEDOWN.Active           = true
 INLINEDOWN.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-INLINEDOWN.Position = UDim2.new(-0.000816103013, 0, 0.975078106, 0)
-INLINEDOWN.Selectable = true
-INLINEDOWN.Size = UDim2.new(0, 506, 0, 0)
+INLINEDOWN.Position         = UDim2.new(-0.000816103013, 0, 1, 0)
+INLINEDOWN.Selectable       = true
+INLINEDOWN.Size             = UDim2.new(0, 506, 0, 2)
 
 VERSIONTITLE.Name = "VERSIONTITLE"
 VERSIONTITLE.Parent = MAIN
@@ -288,7 +288,7 @@ VERSIONTITLE.Position = UDim2.new(0, 374, 0, 239)
 VERSIONTITLE.Selectable = true
 VERSIONTITLE.Size = UDim2.new(0, 129, 0, 18)
 VERSIONTITLE.Font = Enum.Font.Cartoon
-VERSIONTITLE.Text = "VERSION: 0.4 (REVAMP)"
+VERSIONTITLE.Text = "VERSION: 0.6"
 VERSIONTITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
 VERSIONTITLE.TextScaled = true
 VERSIONTITLE.TextSize = 14.000
@@ -325,6 +325,6 @@ SHOW.Text = "SHOW"
 SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
 SHOW.TextSize = 19.000
 SHOW.MouseButton1Down:connect(function()
-	OPENMAIN.Visible = false
-	MAIN.Visible = true
+    OPENMAIN.Visible = false
+    MAIN.Visible = true
 end)
