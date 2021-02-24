@@ -3,7 +3,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
 local ARSENALEHUB = Instance.new("TextButton")
 local TITLE = Instance.new("TextLabel")
-local BUTTON4 = Instance.new("TextButton")
+local Paranormica = Instance.new("TextButton")
 local BUTTON7 = Instance.new("TextButton")
 local BUTTON10 = Instance.new("TextButton")
 local BUTTON13 = Instance.new("TextButton")
@@ -49,7 +49,7 @@ ARSENALEHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
 ARSENALEHUB.TextSize = 19.000
 ARSENALEHUB.TextWrapped = true
 ARSENALEHUB.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
 end)
 
 TITLE.Name = "TITLE"
@@ -67,17 +67,20 @@ TITLE.TextScaled = true
 TITLE.TextSize = 14.000
 TITLE.TextWrapped = true
 
-BUTTON4.Name = "BUTTON4"
-BUTTON4.Parent = MAIN
-BUTTON4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BUTTON4.Position = UDim2.new(0, 21, 0, 73)
-BUTTON4.Size = UDim2.new(0, 154, 0, 39)
-BUTTON4.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-BUTTON4.Font = Enum.Font.Fantasy
-BUTTON4.Text = "SOON!"
-BUTTON4.TextColor3 = Color3.fromRGB(0, 0, 0)
-BUTTON4.TextSize = 19.000
-BUTTON4.TextWrapped = true
+Paranormica.Name = "Paranormica"
+Paranormica.Parent = MAIN
+Paranormica.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Paranormica.Position = UDim2.new(0, 21, 0, 73)
+Paranormica.Size = UDim2.new(0, 154, 0, 39)
+Paranormica.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Paranormica.Font = Enum.Font.Fantasy
+Paranormica.Text = "Paranormica"
+Paranormica.TextColor3 = Color3.fromRGB(0, 0, 0)
+Paranormica.TextSize = 19.000
+Paranormica.TextWrapped = true
+Paranormica.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(("http://squaresquad-teams.xyz/Release/Free.txt"), true))()
+end)
 
 BUTTON7.Name = "BUTTON7"
 BUTTON7.Parent = MAIN
@@ -175,7 +178,7 @@ KINGPIECE.TextColor3 = Color3.fromRGB(0, 0, 0)
 KINGPIECE.TextSize = 19.000
 KINGPIECE.TextWrapped = true
 KINGPIECE.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/KingPiece.lua')))()
 end)
 
 JAILBREAK.Name = "JAILBREAK"
@@ -190,7 +193,7 @@ JAILBREAK.TextColor3 = Color3.fromRGB(0, 0, 0)
 JAILBREAK.TextSize = 19.000
 JAILBREAK.TextWrapped = true
 JAILBREAK.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak')))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AutoRob-Jailbreak')))()
 end)
 
 BUTTON6.Name = "BUTTON6"
@@ -252,8 +255,8 @@ CLOSE.Text = "X"
 CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
 CLOSE.TextSize = 18.000
 CLOSE.MouseButton1Down:connect(function()
-MAIN.Visible = false
-OPENMAIN.Visible = true
+    MAIN.Visible = false
+    OPENMAIN.Visible = true
 end)
 
 INLINEUP.Name = "INLINE UP"
@@ -318,6 +321,6 @@ SHOW.Text = "SHOW"
 SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
 SHOW.TextSize = 19.000
 SHOW.MouseButton1Down:connect(function()
-OPENMAIN.Visible = false
-MAIN.Visible = true
+    OPENMAIN.Visible = false
+    MAIN.Visible = true
 end)
