@@ -309,7 +309,7 @@ VERSIONTITLE.Position = UDim2.new(0, 369, 0, 243)
 VERSIONTITLE.Selectable = true
 VERSIONTITLE.Size = UDim2.new(0, 129, 0, 18)
 VERSIONTITLE.Font = Enum.Font.Cartoon
-VERSIONTITLE.Text = "Version: 0.6"
+VERSIONTITLE.Text = "Maintenance Version"
 VERSIONTITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
 VERSIONTITLE.TextScaled = true
 VERSIONTITLE.TextSize = 14.000
@@ -455,12 +455,26 @@ SideButton1.Position = UDim2.new(0, 334, 0, 7)
 SideButton1.Size = UDim2.new(0, 101, 0, 39)
 SideButton1.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 SideButton1.Font = Enum.Font.Fantasy
-SideButton1.Text = "NoClip"
+SideButton1.Text = "Y-NoClip"
 SideButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
 SideButton1.TextSize = 19.000
 SideButton1.TextWrapped = true
 SideButton1.MouseButton1Down:connect(function()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
 
+		if key == "y" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
 end)
 
 SideButton2.Name = "SideButton2"
