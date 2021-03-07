@@ -2,7 +2,7 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local MAIN = Instance.new("Frame")
-local Arsenal = Instance.new("TextButton")
+local Darkhub = Instance.new("TextButton")
 local TITLE = Instance.new("TextLabel")
 local FleetheFacility = Instance.new("TextButton")
 local Speedrunners4 = Instance.new("TextButton")
@@ -56,19 +56,19 @@ MAIN.Visible = false
 MAIN.Active = true
 MAIN.Draggable = true
 
-Arsenal.Name = "Arsenal"
-Arsenal.Parent = MAIN
-Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Arsenal.Position = UDim2.new(0, 21, 0, 34)
-Arsenal.Size = UDim2.new(0, 154, 0, 39)
-Arsenal.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-Arsenal.Font = Enum.Font.Fantasy
-Arsenal.Text = "Arsenal"
-Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
-Arsenal.TextSize = 19.000
-Arsenal.TextWrapped = true
-Arsenal.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+Darkhub.Name = "Darkhub"
+Darkhub.Parent = MAIN
+Darkhub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Darkhub.Position = UDim2.new(0, 21, 0, 34)
+Darkhub.Size = UDim2.new(0, 154, 0, 39)
+Darkhub.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Darkhub.Font = Enum.Font.Fantasy
+Darkhub.Text = "Darkhub"
+Darkhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Darkhub.TextSize = 19.000
+Darkhub.TextWrapped = true
+Darkhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
 end)
 
 TITLE.Name = "TITLE"
@@ -311,7 +311,7 @@ VERSIONTITLE.Parent = MAIN
 VERSIONTITLE.Active = true
 VERSIONTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VERSIONTITLE.BackgroundTransparency = 1.000
-VERSIONTITLE.Position = UDim2.new(0, 410, 0, 246)
+VERSIONTITLE.Position = UDim2.new(0, 410, 0, 243)
 VERSIONTITLE.Selectable = true
 VERSIONTITLE.Size = UDim2.new(0, 135, 0, 18)
 VERSIONTITLE.Font = Enum.Font.Cartoon
@@ -461,26 +461,12 @@ SideButton1.Position = UDim2.new(0, 334, 0, 7)
 SideButton1.Size = UDim2.new(0, 101, 0, 39)
 SideButton1.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 SideButton1.Font = Enum.Font.Fantasy
-SideButton1.Text = "NoClip"
+SideButton1.Text = "CocoHub"
 SideButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
 SideButton1.TextSize = 19.000
 SideButton1.TextWrapped = true
 SideButton1.MouseButton1Down:connect(function()
-	noclip = false
-	game:GetService('RunService').Stepped:connect(function()
-		if noclip then
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
-
-		if key == "y" then
-			noclip = not noclip
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/CocoHub", true))()
 end)
 
 SideButton2.Name = "SideButton2"
@@ -490,13 +476,10 @@ SideButton2.Position = UDim2.new(0, 334, 0, 46)
 SideButton2.Size = UDim2.new(0, 101, 0, 39)
 SideButton2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 SideButton2.Font = Enum.Font.Fantasy
-SideButton2.Text = "CocoHub"
+SideButton2.Text = "Soon!"
 SideButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
 SideButton2.TextSize = 19.000
 SideButton2.TextWrapped = true
-SideButton2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/CocoHub", true))()
-end)
 
 SideButton3.Name = "SideButton3"
 SideButton3.Parent = _2ndTab
