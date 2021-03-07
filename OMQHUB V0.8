@@ -10,7 +10,7 @@ local BUTTON10 = Instance.new("TextButton")
 local BUTTON13 = Instance.new("TextButton")
 local BUTTON14 = Instance.new("TextButton")
 local BUTTON11 = Instance.new("TextButton")
-local BUTTON8 = Instance.new("TextButton")
+local AFS = Instance.new("TextButton")
 local CounterBlox = Instance.new("TextButton")
 local Paranormica = Instance.new("TextButton")
 local Jailbreak = Instance.new("TextButton")
@@ -164,17 +164,20 @@ BUTTON11.TextColor3 = Color3.fromRGB(0, 0, 0)
 BUTTON11.TextSize = 19.000
 BUTTON11.TextWrapped = true
 
-BUTTON8.Name = "BUTTON8"
-BUTTON8.Parent = MAIN
-BUTTON8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BUTTON8.Position = UDim2.new(0, 175, 0, 112)
-BUTTON8.Size = UDim2.new(0, 154, 0, 39)
-BUTTON8.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
-BUTTON8.Font = Enum.Font.Fantasy
-BUTTON8.Text = "(V0.8)"
-BUTTON8.TextColor3 = Color3.fromRGB(0, 0, 0)
-BUTTON8.TextSize = 19.000
-BUTTON8.TextWrapped = true
+AFS.Name = "AFS"
+AFS.Parent = MAIN
+AFS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFS.Position = UDim2.new(0, 175, 0, 112)
+AFS.Size = UDim2.new(0, 154, 0, 39)
+AFS.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+AFS.Font = Enum.Font.Fantasy
+AFS.Text = "AFS"
+AFS.TextColor3 = Color3.fromRGB(0, 0, 0)
+AFS.TextSize = 19.000
+AFS.TextWrapped = true
+AFS.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AFS-TP%20Script", true))()
+end)
 
 CounterBlox.Name = "Counter Blox"
 CounterBlox.Parent = MAIN
@@ -293,7 +296,7 @@ INLINEUP.Active = true
 INLINEUP.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 INLINEUP.Position = UDim2.new(-0.000816103013, 0, -8.12646103e-05, 0)
 INLINEUP.Selectable = true
-INLINEUP.Size = UDim2.new(0, 506, 0, 1)
+INLINEUP.Size = UDim2.new(0, 505, 0, 1)
 
 INLINEDOWN.Name = "INLINE DOWN"
 INLINEDOWN.Parent = MAIN
@@ -301,21 +304,21 @@ INLINEDOWN.Active = true
 INLINEDOWN.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 INLINEDOWN.Position = UDim2.new(-0.000816103013, 0, 1, 0)
 INLINEDOWN.Selectable = true
-INLINEDOWN.Size = UDim2.new(0, 506, 0, 1)
+INLINEDOWN.Size = UDim2.new(0, 505, 0, 1)
 
 VERSIONTITLE.Name = "VERSIONTITLE"
 VERSIONTITLE.Parent = MAIN
 VERSIONTITLE.Active = true
 VERSIONTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VERSIONTITLE.BackgroundTransparency = 1.000
-VERSIONTITLE.Position = UDim2.new(0, 369, 0, 243)
+VERSIONTITLE.Position = UDim2.new(0, 410, 0, 246)
 VERSIONTITLE.Selectable = true
-VERSIONTITLE.Size = UDim2.new(0, 129, 0, 18)
+VERSIONTITLE.Size = UDim2.new(0, 135, 0, 18)
 VERSIONTITLE.Font = Enum.Font.Cartoon
-VERSIONTITLE.Text = "Maintenance Version"
+VERSIONTITLE.Text = "V0.8"
 VERSIONTITLE.TextColor3 = Color3.fromRGB(0, 0, 0)
 VERSIONTITLE.TextScaled = true
-VERSIONTITLE.TextSize = 14.000
+VERSIONTITLE.TextSize = 19.000
 VERSIONTITLE.TextWrapped = true
 
 BY.Name = "BY"
@@ -487,10 +490,13 @@ SideButton2.Position = UDim2.new(0, 334, 0, 46)
 SideButton2.Size = UDim2.new(0, 101, 0, 39)
 SideButton2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
 SideButton2.Font = Enum.Font.Fantasy
-SideButton2.Text = "Soon!"
+SideButton2.Text = "CocoHub"
 SideButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
 SideButton2.TextSize = 19.000
 SideButton2.TextWrapped = true
+SideButton2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/CocoHub", true))()
+end)
 
 SideButton3.Name = "SideButton3"
 SideButton3.Parent = _2ndTab
@@ -538,7 +544,7 @@ INLINEDOWN2.Active = true
 INLINEDOWN2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 INLINEDOWN2.Position = UDim2.new(-0.00081618008, 0, 1, 0)
 INLINEDOWN2.Selectable = true
-INLINEDOWN2.Size = UDim2.new(0, 464, 0, 1)
+INLINEDOWN2.Size = UDim2.new(0, 463, 0, 1)
 
 INLINEUP2.Name = "INLINE UP2"
 INLINEUP2.Parent = _2ndTab
@@ -546,7 +552,7 @@ INLINEUP2.Active = true
 INLINEUP2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 INLINEUP2.Position = UDim2.new(-0.00081618008, 0, 0, 0)
 INLINEUP2.Selectable = true
-INLINEUP2.Size = UDim2.new(0, 464, 0, 1)
+INLINEUP2.Size = UDim2.new(0, 463, 0, 1)
 
 OPENMAIN.Name = "OPENMAIN"
 OPENMAIN.Parent = ScreenGui
@@ -569,4 +575,3 @@ SHOW.MouseButton1Down:connect(function()
 	MAIN.Visible = true
 	SHOW.Visible = false
 end)
-print("Successfully loaded OMQHUB")
