@@ -772,3 +772,5 @@ Show.MouseButton1Down:connect(function()
 	Main.Visible = true
 	Show.Visible = false
 end)
+
+print("Use the Key to enter: 81209721825")
