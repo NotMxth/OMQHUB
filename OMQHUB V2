@@ -1,4 +1,4 @@
--- OMQHUB V2 - Made by FELIX
+-- OMQHUB V2 - Made by FELIX --
 
 local OMQHUBV2 = Instance.new("ScreenGui")
 local LoginMain = Instance.new("ImageLabel")
@@ -22,7 +22,7 @@ local Counterblox = Instance.new("TextButton")
 local AFS = Instance.new("TextButton")
 local Speedrunners4 = Instance.new("TextButton")
 local BasicallyFNF = Instance.new("TextButton")
-local Button10 = Instance.new("TextButton")
+local AFSHUBD2 = Instance.new("TextButton")
 local Button11 = Instance.new("TextButton")
 local Button12 = Instance.new("TextButton")
 local Button13 = Instance.new("TextButton")
@@ -398,19 +398,22 @@ BasicallyFNF.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/Basically%20FNF", true))()
 end)
 
-Button10.Name = "Button10"
-Button10.Parent = GamesScrolling
-Button10.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-Button10.BackgroundTransparency = 1.000
-Button10.BorderSizePixel = 0
-Button10.Position = UDim2.new(0.286585361, 0, 0.69169122, 0)
-Button10.Size = UDim2.new(0, 159, 0, 38)
-Button10.Font = Enum.Font.Cartoon
-Button10.Text = "Soon!"
-Button10.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button10.TextScaled = true
-Button10.TextSize = 50.000
-Button10.TextWrapped = true
+AFSHUBD2.Name = "AFSHUB-D2"
+AFSHUBD2.Parent = GamesScrolling
+AFSHUBD2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+AFSHUBD2.BackgroundTransparency = 1.000
+AFSHUBD2.BorderSizePixel = 0
+AFSHUBD2.Position = UDim2.new(0.286585361, 0, 0.69169122, 0)
+AFSHUBD2.Size = UDim2.new(0, 159, 0, 38)
+AFSHUBD2.Font = Enum.Font.Cartoon
+AFSHUBD2.Text = "AFSHUB-D2"
+AFSHUBD2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AFSHUBD2.TextScaled = true
+AFSHUBD2.TextSize = 50.000
+AFSHUBD2.TextWrapped = true
+AFSHUBD2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Autorob-Jailbreak/main/AFSHUB-D2", true))()
+end)
 
 Button11.Name = "Button11"
 Button11.Parent = GamesScrolling
@@ -772,5 +775,3 @@ Show.MouseButton1Down:connect(function()
 	Main.Visible = true
 	Show.Visible = false
 end)
-
-print("Use the Key to enter OMQHUB V2: 81209721825")
