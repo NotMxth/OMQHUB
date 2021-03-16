@@ -259,7 +259,7 @@ Arsenal.TextScaled = true
 Arsenal.TextSize = 45.000
 Arsenal.TextWrapped = true
 Arsenal.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mikehales7/AL/main/Script.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/Arsenal-SimpleAimbot"))()
 end)
 
 Jailbreak.Name = "Jailbreak"
