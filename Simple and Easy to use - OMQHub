@@ -1,0 +1,91 @@
+--[[
+
+    // Themes \\
+
+       Serpent
+       LightTheme
+       DarkTheme
+       GrapeThemw
+       BloodTheme
+       Ocean
+       Midnight
+       Sentinel
+       Synapse
+
+--]]
+
+_G.Theme = "Synapse"
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Simple and Easy to use - OMQHub", _G.Theme)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/Decaying%20Winter%20-%20Bypass"))()
+
+local HomeTab = Window:NewTab("Home")
+local HomeTabSection = HomeTab:NewSection("This script was made using the Kavo UI Library.")
+local HomeTabSection = HomeTab:NewSection("Inspired by: Tanci Penguin#7743")
+
+HomeTabSection:NewButton("Copy Discord", "Copies the Discord link", function()
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "OMQHub";
+    Text = "Discord hasn't been made yet";
+    Icon = "";
+    Duration = 1.25;
+})
+end)
+
+local HomeTabSection = HomeTab:NewSection("// Supported Games \\")
+local HomeTabSection = HomeTab:NewSection("Decaying Winter")
+local HomeTabSection = HomeTab:NewSection("More coming soon")
+
+local PlayerTab = Window:NewTab("Player")
+local PlayerTabSection = PlayerTab:NewSection("Player Settings")
+
+
+PlayerTabSection:NewSlider("Walkspeed", "Changes the speed of the player", 250, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerTabSection:NewSlider("Jumppower", "Changes the jumppower of the player", 1000, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerTabSection:NewSlider("Gravity", "Changes the gravitation of the player", 750, 0, function(s)
+    game.Workspace.Gravity = s
+end)
+
+PlayerTabSection:NewButton("Reset Walkspeed", "Set your walkspeed back to Normal", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+PlayerTabSection:NewButton("Reset Jumppower", "Set your jumppower back to Normal", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 52
+end)
+
+PlayerTabSection:NewButton("Reset Gravity", "Set your gravity back to Normal", function()
+    game.Workspace.Gravity = 196.2
+end)
+
+local DWTab = Window:NewTab("Decaying Winter")
+local DWBypassedSection = DWTab:NewSection("The anticheat has been bypassed, have fun.")
+local DWTabSection = DWTab:NewSection("Decaying Winter - Scripts are below")
+
+
+DWTabSection:NewButton("Infinite Ammo", "N/A", function()   
+local Amount = 500
+ for _, v in ipairs(getgc(true)) do
+     if (typeof(v) == "table" and rawget(v, "Light") and rawget(v, "Small")) then
+         for AmmoType, _ in pairs(v) do
+            v[AmmoType] = Amount
+        end
+    end
+end
+end)
+
+DWTabSection:NewButton("Infinite Stamina", "Give urself infinite Stamina", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/EEEEE"))()
+end)
+
+DWTabSection:NewButton("Infinite Food", "Like the button says, you have infinite food", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/Infinite%20Rations"))()
+end)
+
