@@ -53,8 +53,8 @@ local DWTabSection = DWTab:NewSection("Decaying Winter - Scripts are below")
 
 DWTabSection:NewButton("Teleport to Game", "Joins the game Decaaying Winter for you", function()
     local TeleportService = game:GetService("TeleportService")
-    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
     TeleportService:Teleport(7551121821, game.Players.LocalPlayer)
+    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
 end)
 
 
@@ -83,8 +83,8 @@ local RecoveryTabSection = RecoveryTab:NewSection("This game has no anticheat, l
 
 RecoveryTabSection:NewButton("Teleport to Game", "Joins the game Recovery for you", function()
     local TeleportService = game:GetService("TeleportService")
-    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
     TeleportService:Teleport(6405808840, game.Players.LocalPlayer)
+    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
 end)
 
 RecoveryTabSection:NewButton("Fullbright", "Removes shadows, and lights up everything to make the vision clear", function()
