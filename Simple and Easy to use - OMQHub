@@ -51,6 +51,12 @@ local DWTab = Window:NewTab("Decaying Winter")
 local DWBypassedSection = DWTab:NewSection("The anticheat has been bypassed, have fun.")
 local DWTabSection = DWTab:NewSection("Decaying Winter - Scripts are below")
 
+DWTabSection:NewButton("Teleport to Game", "Joins the game Decaaying Winter for you", function()
+    local TeleportService = game:GetService("TeleportService")
+    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
+    TeleportService:Teleport(7551121821, game.Players.LocalPlayer)
+end)
+
 
 DWTabSection:NewButton("Infinite Ammo", "N/A", function()   
 local Amount = 500
@@ -67,7 +73,56 @@ DWTabSection:NewButton("Infinite Stamina", "Give urself infinite Stamina", funct
      loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/EEEEE"))()
 end)
 
-DWTabSection:NewButton("Infinite Food", "Like the button says, you have infinite food", function()
+DWTabSection:NewButton("Infinite Food", "Like the button says, you have infinite Food", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/Infinite%20Rations"))()
 end)
 
+local DWTabSectionComingSoon = DWTab:NewSection("More coming soon :)")
+local RecoveryTab = Window:NewTab("Recovery")
+local RecoveryTabSection = RecoveryTab:NewSection("This game has no anticheat, lol")
+
+RecoveryTabSection:NewButton("Teleport to Game", "Joins the game Recovery for you", function()
+    local TeleportService = game:GetService("TeleportService")
+    queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/OMQHUB/main/Simple%20and%20Easy%20to%20use%20-%20OMQHub"))())
+    TeleportService:Teleport(6405808840, game.Players.LocalPlayer)
+end)
+
+RecoveryTabSection:NewButton("Fullbright", "Removes shadows, and lights up everything to make the vision clear", function()
+    game.Lighting.Brightness = "1.45"
+    game.Lighting.ExposureCompensation = "1"
+    game.Lighting.FogEnd = "99999"
+    game.Lighting.FogStart = "99999"
+    game.Lighting.TimeOfDay = "6:24:59"
+    game.Lighting.GlobalShadows = false
+
+    game.Lighting.Bloom:Destroy()
+    game.Lighting.ColorCorrection:Destroy()
+    game.Lighting.Blur:Destroy()
+    game.Lighting.SunRays:Destroy()
+end)
+
+RecoveryTabSection:NewButton("Godmode / Break killers", "Breaks all Killers, and gives you god mode", function()
+    game.Players.LocalPlayer.Character.Humanoid.Name = 1
+    local l = game.Players.LocalPlayer.Character["1"]:Clone()
+    l.Parent = game.Players.LocalPlayer.Character
+    l.Name = "Humanoid"
+    wait(0.1)
+    game.Players.LocalPlayer.Character["1"]:Destroy()
+    game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+    game.Players.LocalPlayer.Character.Animate.Disabled = true
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Animate.Disabled = false
+    game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+end)
+
+RecoveryTabSection:NewButton("Third Person", "Activating this will give you the ability to zoom out", function()
+    game.Players.LocalPlayer.CameraMode = "Classic"
+    game.Workspace.Camera.Viewmodel:Destroy()
+    game:GetService("UserInputService").MouseIconEnabled = true
+end)
+
+RecoveryTabSection:NewButton("Remove Static Sound", "Removes the Sound the static gives", function()
+    game.Players.LocalPlayer.PlayerGui.ScreenGui.LocalScript.Static.Playing = false
+end)
+
+local RecoveryTabComingSoon = RecoveryTab:NewSection("More scripts coming soon for Recovery :)")
