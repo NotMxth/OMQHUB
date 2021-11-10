@@ -113,7 +113,7 @@ RecoveryTabSection:NewButton("Fullbright", "Removes shadows, and lights up every
     game.Lighting.SunRays:Destroy()
 end)
 
-RecoveryTabSection:NewButton("Godmode / Break killers (Can't pickup items)", "Breaks all Killers, and gives you god mode", function()
+RecoveryTabSection:NewButton("Godmode / Break killers", "Breaks all Killers, and gives you god mode, sadly can't pickup items", function()
     game.Players.LocalPlayer.Character.Humanoid.Name = 1
     local l = game.Players.LocalPlayer.Character["1"]:Clone()
     l.Parent = game.Players.LocalPlayer.Character
