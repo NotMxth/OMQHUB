@@ -71,8 +71,8 @@ end)
 DWTabSection:NewButton("Fullbright", "Removes shadows, and lights up everything to make the vision clear", function()
     game.Lighting.Brightness = "1.45"
     game.Lighting.ExposureCompensation = "1"
-    game.Lighting.FogEnd = "0"
-    game.Lighting.FogStart = "99999"
+    game.Lighting.FogEnd = "99999"
+    game.Lighting.FogStart = "0"
     game.Lighting.TimeOfDay = "6:24:59"
     game.Lighting.GlobalShadows = false
 
@@ -102,8 +102,8 @@ end)
 RecoveryTabSection:NewButton("Fullbright", "Removes shadows, and lights up everything to make the vision clear", function()
     game.Lighting.Brightness = "1.45"
     game.Lighting.ExposureCompensation = "1"
-    game.Lighting.FogEnd = "0"
-    game.Lighting.FogStart = "99999"
+    game.Lighting.FogEnd = "99999"
+    game.Lighting.FogStart = "0"
     game.Lighting.TimeOfDay = "6:24:59"
     game.Lighting.GlobalShadows = false
 
